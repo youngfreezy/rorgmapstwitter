@@ -1,0 +1,25 @@
+<!-- 
+	the input from the user.
+	The form submit will be intercepted by ajax and the user input will be sent to
+	the /search endpoint using ajax. 
+	The ajax code is in the /app/assets/javascripts/search.js file
+-->
+<form name="twittter_search">
+    <label for="term">Insert Your Search Term</label>
+    <input type="text" name="term"/>
+    <input type="submit" value="Submit"/>
+    <br>
+</form>
+<!-- the input from the user -->
+
+<!-- add buttons -->
+<button id = "btnTerrain">Terrain</button>
+<button id = "btnRoadmap">Roadmap</button>
+<button id = "btnSatellite">Satellite</button>
+<button id="btnHybrid">Hybrid</button>
+
+<div id="mapDiv"></div>
+
+<div class="loading">
+<div class="loadingtext">
+	Searching tweets..100 at a time. Please be patient :D Zoom out if you can't see tweets.</div></div>
