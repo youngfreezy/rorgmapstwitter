@@ -129,7 +129,7 @@ jQuery(document).ready(function() {
     hideLoadingSpinner();
     if (res.statuses.length <= 0) {
         setTimeout(function (){
-            alert(“No results found”);
+            alert("No results found");
         }, 200);
         return;
     }
