@@ -125,7 +125,7 @@ jQuery(document).ready(function() {
       
       showLoadingSpinner();
       
-    search.done(function(res) {
+   search.done(function(res) {
     hideLoadingSpinner();
     if (res.statuses.length <= 0) {
         setTimeout(function (){
