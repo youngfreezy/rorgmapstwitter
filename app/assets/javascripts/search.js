@@ -109,9 +109,9 @@ jQuery(document).ready(function() {
   function showLoadingSpinner() {
       jQuery(".loading").fadeIn();
   }
-  function hideLoadingSpinner() {
-      jQuery(".loading").fadeOut();
-  }
+ function hideLoadingSpinner() {
+    jQuery(".loading").fadeOut(199);
+}
 
   var $term = jQuery('input[name="term"]');
   jQuery('form[name="twittter_search"]').on('submit', function (e) {
