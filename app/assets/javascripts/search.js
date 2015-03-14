@@ -125,18 +125,18 @@ jQuery(document).ready(function() {
       
       showLoadingSpinner();
       
-      search.done(function(res) {
-          if (res.statuses.length <= 0) {
-              alert("No results found");
-              hideLoadingSpinner();
-              return;
+    search.done(function(res) {
+    hideLoadingSpinner();
+    if (res.statuses.length <= 0) {
+        setTimeout(function (){
+            alert(“No results found”);
+        }, 200);
+        return;
+    }
 
-          }
-          
-          hideLoadingSpinner();
-          
-          mapStatuses(res.statuses);
-      });
+   mapStatuses(res.statuses);
+});
+
       
       search.error(function (err) {
           console.log(err);
