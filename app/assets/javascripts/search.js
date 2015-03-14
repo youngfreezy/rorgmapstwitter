@@ -110,7 +110,7 @@ jQuery(document).ready(function() {
       jQuery(".loading").fadeIn();
   }
  function hideLoadingSpinner() {
-    jQuery(".loading").fadeOut(199);
+    jQuery(".loading").fadeOut(200);
 }
 
   var $term = jQuery('input[name="term"]');
@@ -130,7 +130,7 @@ jQuery(document).ready(function() {
     if (res.statuses.length <= 0) {
         setTimeout(function (){
             alert("No results found");
-        }, 250);
+        }, 400);
         return;
     }
 
