@@ -130,7 +130,7 @@ jQuery(document).ready(function() {
     if (res.statuses.length <= 0) {
         setTimeout(function (){
             alert("No results found");
-        }, 200);
+        }, 250);
         return;
     }
 
